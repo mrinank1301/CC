@@ -5,7 +5,9 @@ user=input("enter the expression:")
 
 stack=[]
 
-for i in user:
+users =user.split()
+
+for i in users:    
     print(f"step by step in stack:{stack}")
     if i=="+" or i=="-" or i=="*" or i=="/":
         a=stack.pop()
